@@ -1,9 +1,9 @@
 import React from 'react'
-import {Flex,Box, ButtonGroup, Button,Heading, Spacer,Text, useDisclosure,
+import {Flex,Box, ButtonGroup, Button, Spacer,Text, useDisclosure,
   MenuItem,Image,
   Menu,
   MenuButton,
-  MenuList,useColorModeValue, color} from "@chakra-ui/react"
+  MenuList} from "@chakra-ui/react"
   import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
@@ -13,8 +13,8 @@ const Navbar = () => {
     <div>
 <div  style={{backgroundColor:" #2D8CFF" , color:"white", fontWeight:"600"}}>
 <Flex minWidth='max-content' alignItems='center' gap='5'>
-  <Box p='6'>
-    <Image src='https://document-export.canva.com/VYZOk/DAFUj6VYZOk/2/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221213T171511Z&X-Amz-Expires=66732&X-Amz-Signature=6ffddd0e3e80bd7a3a2b87c946ada452eeadf1508379f2be079c5060a6e82249&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2014%20Dec%202022%2011%3A47%3A23%20GMT'/>
+  <Box>
+   <Link to="/"> <Image width={"100px"} height="75px" src='https://document-export.canva.com/VYZOk/DAFUj6VYZOk/2/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221213%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221213T171511Z&X-Amz-Expires=66732&X-Amz-Signature=6ffddd0e3e80bd7a3a2b87c946ada452eeadf1508379f2be079c5060a6e82249&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2014%20Dec%202022%2011%3A47%3A23%20GMT'/></Link>
   </Box>
   <Spacer/>
 
@@ -42,9 +42,9 @@ const Navbar = () => {
         </Box>
   <Box display={"flex"} gap="50px" fontSize={"2xl"}>
   <Text> <Link to="/coach">Coach</Link></Text>
-    <Text> Elite</Text>
+    <Text><Link to="/elite"> Elite</Link></Text>
     
-    <Text>Exercies</Text>
+    <Text> <Link to="/exercies" >Exercies</Link></Text>
     <Text>Community</Text>
 
     </Box>

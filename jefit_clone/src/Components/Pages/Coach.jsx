@@ -88,7 +88,7 @@ Sell your services as a coach or just sell your premium workout plan - diversify
   <Box>
 <Text fontSize={"6xl"} fontWeight="bold" color={"blue.500"}>Coach Branding</Text>
 <Text fontSize={"4xl"} fontWeight="semibold" >Build a reputation & let new clients come to you.</Text>
-<Text width={"500px"} marginTop={"10px"} fontSize="xl">· Be one of the first Coaches on JEFIT and start building your reputation first
+<Text width={"500px"} marginTop={"10px"} fontSize="xl">· Be one of the first Coaches on GOFIT and start building your reputation first
 · Find time efficient clients as JEFIT users require less coaching than your average client.
 · Display your client successes and your certifications on your profile.</Text>
 <Button marginLeft={"50px"} height={'60px'} marginTop={"25px"} fontSize={"xl"} fontWeight="semibold" width={"300px"} bgColor={"blue.500"} color="white" border="2px solid" _hover={{bgColor:"white" ,color:"blue.500"}} >START EXPLORING</Button>

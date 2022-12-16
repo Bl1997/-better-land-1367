@@ -1,5 +1,5 @@
 import React from 'react'
-import { border, Box, Flex,Text } from "@chakra-ui/react"
+import {  Box, Flex,Text } from "@chakra-ui/react"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -11,35 +11,35 @@ const Footer = () => {
 
 <Box marginTop={"50px"}>
     <Text  marginBottom={"20px"} fontSize={"xl"} fontWeight="semibold">Products</Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Elite Membership</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Coach</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="/register">Signup</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="/login">Login</Link></Text>
+    <Text marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Elite Membership</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Coach</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="/register">Signup</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="/login">Login</Link></Text>
 </Box>
 
 
 <Box marginTop={"50px"}>
     <Text  marginBottom={"20px"} fontSize={"xl"} fontWeight="semibold">Resource</Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Workout Plans</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Exercises Database</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Community</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Help Center</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Workout Plans</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Exercises Database</Link></Text>
+    <Text marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Community</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Help Center</Link></Text>
 </Box>
 
 <Box marginTop={"50px"}>
     <Text marginBottom={"20px"} fontSize={"xl"} fontWeight="semibold">Legal Press</Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Privacy Policy</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Terms of Use</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">IP / DMCA Notices</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Press & Mediar</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Privacy Policy</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Terms of Use</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">IP / DMCA Notices</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Press & Mediar</Link></Text>
 </Box>
 
 <Box marginTop={"50px"} >
     <Text  marginBottom={"20px"} fontSize={"xl"} fontWeight="semibold">Follow US</Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Blog</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Facebook</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Twitter</Link></Text>
-    <Text _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Instagram</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Blog</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Facebook</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Twitter</Link></Text>
+    <Text  marginTop={"5px"} _hover={{color:"blue", border:"0px"}} borderBottom={"1.5px solid"} color={"gray"}><Link to="#">Instagram</Link></Text>
 </Box>
 
  </Flex>

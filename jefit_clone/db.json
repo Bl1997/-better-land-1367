@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "email": "bl1997@gmail.com",
+      "password": "$2a$10$GGnAoFWrLUZrET6pUmY52OljLIA8Z1Hu0obJ1nVj9F40UFiEu797W",
+      "id": 1
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "$2a$10$3bNHTUNpUK3plplHL/CJKObyo1r49rhcHYvv./D6z.XjilLURqNKy",
+      "id": 2
+    },
+    {
+      "email": "bihari@gmail.com",
+      "password": "$2a$10$rW/qkXUp3QeZAuLmW7sw6.wktMtgQxiAm/loV8GmNBls/gvVBUywa",
+      "id": 3
+    },
+    {
+      "email": "abcdefg@gmail.com",
+      "password": "$2a$10$jxSCKR9GFh1YjxoGzCeYoetJ67ntU38khvPohCyrMPekLCzma/bty",
+      "id": 4
+    }
+  ]
+}

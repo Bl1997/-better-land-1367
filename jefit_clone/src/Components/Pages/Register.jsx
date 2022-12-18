@@ -1,99 +1,76 @@
-import {
-    Flex,
-    Box,
-    FormControl,
-    FormLabel,
-    Input,
-    InputGroup,
-    HStack,
-    InputRightElement,
-    Stack,
-    Button,
-    Heading,
-    Text,
-    useColorModeValue,
-    Link,
-  } from '@chakra-ui/react';
-  import { useState } from 'react';
-  import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+
+  import { useContext } from 'react';
+import { useState } from 'react';
+import {Text,Box, Flex, Spacer,Image} from "@chakra-ui/react"
+import { Link } from 'react-router-dom';
+
+ 
   
   export default function Register() {
-    const [showPassword, setShowPassword] = useState(false);
+   
+
+ 
+    const [name,setName]=useState("")
+    const [lname,setLname]=useState("")
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
   
+const handleName=(e)=>{
+   setName(e.target.value)
+}
+
+
+const handleLName=(e)=>{
+  setLname(e.target.value)
+}
+
+const handleEmail=(e)=>{
+  setEmail(e.target.value)
+}
+
+const handlePass=(e)=>{
+  setPassword(e.target.value)
+}
+
+   const handleSubmit=(e)=>{
+   e.preventDefault()
+
+  fetch("http://localhost:3000/users",{
+    method:"POST",
+    headers:{"Content-Type" : "application/json"},
+    body :JSON.stringify({email,password})
+  }).then((res)=>res.json())
+     .then((res)=>{
+      if(res.token){
+        localStorage.setItem("token",JSON.stringify(res.token))
+      }
+     })
+  }
+
     return (
-      <Flex
-        minH={'100vh'}
-        align={'center'}
-        justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-          <Stack align={'center'}>
-            <Heading fontSize={'4xl'} textAlign={'center'}>
-              Sign up
-            </Heading>
-            <Text fontSize={'lg'} color={'gray.600'}>
-              to enjoy all of our cool features ✌️
-            </Text>
-          </Stack>
-          <Box
-            rounded={'lg'}
-            bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
-            p={8}>
-            <Stack spacing={4}>
-              <HStack>
-                <Box>
-                  <FormControl id="firstName" isRequired>
-                    <FormLabel>First Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-                <Box>
-                  <FormControl id="lastName">
-                    <FormLabel>Last Name</FormLabel>
-                    <Input type="text" />
-                  </FormControl>
-                </Box>
-              </HStack>
-              <FormControl id="email" isRequired>
-                <FormLabel>Email address</FormLabel>
-                <Input type="email" />
-              </FormControl>
-              <FormControl id="password" isRequired>
-                <FormLabel>Password</FormLabel>
-                <InputGroup>
-                  <Input type={showPassword ? 'text' : 'password'} />
-                  <InputRightElement h={'full'}>
-                    <Button
-                      variant={'ghost'}
-                      onClick={() =>
-                        setShowPassword((showPassword) => !showPassword)
-                      }>
-                      {showPassword ? <ViewIcon /> : <ViewOffIcon />}
-                    </Button>
-                  </InputRightElement>
-                </InputGroup>
-              </FormControl>
-              <Stack spacing={10} pt={2}>
-                <Button
-                  loadingText="Submitting"
-                  size="lg"
-                  bg={'blue.400'}
-                  color={'white'}
-                  _hover={{
-                    bg: 'blue.500',
-                  }}>
-                  Sign up
-                </Button>
-              </Stack>
-              <Stack pt={6}>
-                <Text align={'center'}>
-                  Already a user? <Link color={'blue.400'}>Login</Link>
-                </Text>
-              </Stack>
-            </Stack>
-          </Box>
-        </Stack>
+    <>
+    <Box marginTop={"80px"} marginLeft={"400px"} justifyContent={"space-around"} textAlign={"center"}  shadow="2xl" width={"30%"} height="500px" borderRadius={"15"}>
+      <Flex><Text fontSize={"3xl"} fontWeight={"bold"} color="teal.700" borderBottom={"2px solid teal"}>Register</Text>
+      <Spacer/>
+      <Text fontSize={"3xl"} fontWeight={"bold"}  color={"lightblue"}>Log In</Text>
       </Flex>
-    );
+    
+     <form onSubmit={handleSubmit}>
+   
+  <input type="text" placeholder='First Name' value={name} onChange={handleName} style={{borderBottom:"2px solid darkblue ",  width:"270px",marginTop:"20px",height:"35px"}} /><br />
+
+  <input type="text" placeholder='Last Name' value={lname} onChange={handleLName} style={{borderBottom:"2px solid darkblue ", width:"270px",marginTop:"20px",height:"35px"}} />
+  <br />
+
+  <input type="email" placeholder='Enter Email' value={email} onChange={handleEmail}style={{borderBottom:"2px solid darkblue ", width:"270px",marginTop:"20px",height:"35px"}} /><br />
+
+ <input type="password" placeholder='enter Password' value={password} onChange={handlePass}style={{borderBottom:"2px solid darkblue ", width:"270px",marginTop:"20px",height:"35px"}} /><br />
+ <Text >Already have member?<Text fontSize={"xl"} fontWeight="semibold"><Link to="/login">Log In</Link></Text></Text>
+ <input type="submit" value="REGISTER" style={{color:"teal" , backgroundColor:"pink",fontSize:"large",width:"120px",borderRadius:"10px",marginTop:"40px", fontWeight:"bold",height:"35px",cursor:"pointer"}}/>
+     </form>
+     <Text fontSize={"xl"} color="gray">or</Text>
+    
+     </Box>
+    </>
+    )
   }

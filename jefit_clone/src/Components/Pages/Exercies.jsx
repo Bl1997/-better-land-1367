@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box,Text,Image, Select } from '@chakra-ui/react'
+import { Box,Text,Image } from '@chakra-ui/react'
 import Choose from './Choose'
 const Exercies = () => {
   return (

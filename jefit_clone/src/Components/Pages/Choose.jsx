@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Flex, Link,  Text,Image, Button,Input } from "@chakra-ui/react"
+import { Box, Flex,   Text,Image, Button,Input } from "@chakra-ui/react"
+import {Link} from "react-router-dom"
 import Footer from './Footer'
 
 const Choose = () => {
@@ -30,12 +31,12 @@ Muscles</Text></Box>
 <Box><Text color={"gray"} marginTop="50px">
 Equipment</Text></Box>
 <Box>
-  <Box color={"gray"}><input type="checkbox" />All</Box>
-  <Box color={"gray"}><input type="checkbox" />Bands</Box>
-  <Box color={"gray"}> <input type="checkbox" />Barbell</Box>
-  <Box color={"gray"}><input type="checkbox" />Bench</Box>
-  <Box color={"gray"}> <input type="checkbox" />Body Only</Box>
-  <Box color={"gray"}> <input type="checkbox" />Dumbbell</Box>
+  <Box color={"gray"}><input type="checkbox" /> All</Box>
+  <Box color={"gray"}><input type="checkbox" /> Bands</Box>
+  <Box color={"gray"}> <input type="checkbox" />  Barbell</Box>
+  <Box color={"gray"}><input type="checkbox" /> Bench</Box>
+  <Box color={"gray"}> <input type="checkbox" /> Body Only</Box>
+  <Box color={"gray"}> <input type="checkbox" /> Dumbbell</Box>
   <Box color={"gray"}> <input type="checkbox" /> Exercise Ball</Box>
   <Box color={"gray"}> <input type="checkbox" /> Exercise Ball</Box>
 
@@ -44,13 +45,13 @@ Equipment</Text></Box>
 </Box>
 
 <Box>
-<Box color={"gray"}><input type="checkbox" />Foam Roll</Box>
-<Box color={"gray"}><input type="checkbox" />Kettlebell</Box>
-<Box color={"gray"}><input type="checkbox" />Machine - Cardio</Box>
-<Box color={"gray"}><input type="checkbox" />Machine - Strength</Box>
-<Box color={"gray"}><input type="checkbox" />Other</Box>
-<Box color={"gray"}><input type="checkbox" />Pull Bar</Box>
-<Box color={"gray"}><input type="checkbox" />Weight Plate</Box>
+<Box color={"gray"}><input type="checkbox" /> Foam Roll</Box>
+<Box color={"gray"}><input type="checkbox" /> Kettlebell</Box>
+<Box color={"gray"}><input type="checkbox" /> Machine - Cardio</Box>
+<Box color={"gray"}><input type="checkbox" /> Machine - Strength</Box>
+<Box color={"gray"}><input type="checkbox" /> Other</Box>
+<Box color={"gray"}><input type="checkbox" /> Pull Bar</Box>
+<Box color={"gray"}><input type="checkbox" /> Weight Plate</Box>
 
 
 </Box>
@@ -61,16 +62,16 @@ Equipment</Text></Box>
 
   <Box><Text color={"gray"} marginTop="30px">Type</Text></Box>
   <Box>
-  <Box color={"gray"}><input type="checkbox" />Strength</Box>
-  <Box color={"gray"}><input type="checkbox" />Stretching</Box>
-  <Box color={"gray"}><input type="checkbox" />Powerlifting</Box>
-  <Box color={"gray"}><input type="checkbox" />Olympic Weight Lifting</Box>
+  <Box color={"gray"}><input type="checkbox" /> Strength</Box>
+  <Box color={"gray"}><input type="checkbox" /> Stretching</Box>
+  <Box color={"gray"}><input type="checkbox" /> Powerlifting</Box>
+  <Box color={"gray"}><input type="checkbox" /> Olympic Weight Lifting</Box>
 
   </Box>
   <Box><Text color={"gray"} marginTop="30px">Difficulty</Text></Box>
-  <Box gap={"2"}><Box color={"gray"}><input type="checkbox" />Beginner</Box>
+  <Box gap={"2"}><Box color={"gray"}><input type="checkbox" />  Beginner</Box>
   <Box color={"gray"}><input type="checkbox" /> Intermediate</Box>
-  <Box color={"gray"}><input type="checkbox" />Expert</Box>
+  <Box color={"gray"}><input type="checkbox" /> Expert</Box>
   </Box>
   <Box gap={"5"}><Input placeholder='Search...' border={"1px solid"}/> <Button marginLeft={"120px"} marginTop="10px" bgColor={"blue.400"} color="white">Search</Button></Box>
 </Flex>
@@ -107,8 +108,8 @@ Equipment</Text></Box>
   </Box>
 
 
-  <Box  textAlign={"center"}><Image  shadow={"2xl"} src='https://www.jefit.com/images/exercises/1080_664/1604.jpg'/>
-   <Text  color={"blue.400"}>Barbell Bradford Rocky</Text>
+  <Box  textAlign={"center"}><Link to="/showpage"><Image  shadow={"2xl"} src='https://www.jefit.com/images/exercises/1080_664/1604.jpg'/></Link>
+ <Text  color={"blue.400"}><Link to="/showpage">Barbell Bradford Rocky</Link></Text>
    <Text fontSize={"small"}>Shoulders, Triceps, Upper Legs</Text>
   </Box>
 

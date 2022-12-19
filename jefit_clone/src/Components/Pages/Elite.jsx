@@ -102,7 +102,7 @@ More...</Text>
 </Flex>
 </Box>
 <Box  width="70%" height={"100px"} marginLeft="200px">
-<Image width={"100%"} height="260px" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS16qkDE8FeVc6bdQuU4qZjMmacVPHYKj9YgQ&usqp=CAU'/>
+<Image width={"100%"} height="260px" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKq6i2M2F_gE2DdZFHZ8WdUJWUOeUu-Uot0A&usqp=CAU'/>
 </Box>
 <Box marginTop="200px"></Box>
 <Footer />

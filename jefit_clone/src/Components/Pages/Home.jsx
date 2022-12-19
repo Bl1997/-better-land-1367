@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box,Flex,Spacer,Text,Image, Button } from "@chakra-ui/react"
-import Crousel from './Crousel'
+import { Box,Flex,Text,Image, Button } from "@chakra-ui/react"
+
 import Footer from './Footer'
 
 const Home = () => {

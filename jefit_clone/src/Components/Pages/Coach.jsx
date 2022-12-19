@@ -9,7 +9,7 @@ const Coach = () => {
   }
 
   return (
-    <div>Coach
+    <div>
 
 <Box marginTop={"50px"} textAlign={"center"} justifyContent={"center"} alignItems="center" gap={"10"}>
 <Text fontStyle={"italic"} fontSize={"6xl"} fontWeight="bold">Personal Coach Mode</Text>

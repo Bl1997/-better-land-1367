@@ -1,14 +1,14 @@
 
-  import { useContext } from 'react';
+
 import { useState } from 'react';
-import {Text,Box, Flex, Spacer,Image} from "@chakra-ui/react"
-import { Link } from 'react-router-dom';
+import {Text,Box, Flex, Spacer} from "@chakra-ui/react"
+import { Link, useNavigate } from 'react-router-dom';
 
  
   
   export default function Register() {
    
-
+  const navigate=useNavigate()
  
     const [name,setName]=useState("")
     const [lname,setLname]=useState("")
@@ -32,19 +32,38 @@ const handlePass=(e)=>{
   setPassword(e.target.value)
 }
 
+
+
+
+
+let registerLS=JSON.parse(localStorage.getItem("register-page"))||[];
+
+
+
+   
+    
+
    const handleSubmit=(e)=>{
    e.preventDefault()
 
-  fetch("http://localhost:3000/users",{
-    method:"POST",
-    headers:{"Content-Type" : "application/json"},
-    body :JSON.stringify({email,password})
-  }).then((res)=>res.json())
-     .then((res)=>{
-      if(res.token){
-        localStorage.setItem("token",JSON.stringify(res.token))
-      }
-     })
+
+
+   let obj={
+    email:{email},
+    pass:{password},
+    conpass:{password},
+
+}
+registerLS.push(obj);
+console.log(obj)
+localStorage.setItem("register-page",JSON.stringify(registerLS))
+alert("successfully Register please Log In in");
+
+navigate("/login")
+
+
+
+     
   }
 
     return (

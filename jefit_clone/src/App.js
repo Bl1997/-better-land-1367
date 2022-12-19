@@ -1,9 +1,7 @@
 
 import './App.css';
 import Navbar from './Components/Navbar';
-import Footer from './Components/Pages/Footer';
-import Login from './Components/Pages/Login';
-import Register from './Components/Pages/Register';
+import Show from './Components/Pages/Show';
 import Allroutes from './Components/Routes/Allroutes';
 
 function App() {
@@ -13,6 +11,7 @@ function App() {
   
   <Navbar/>
   <Allroutes/>
+  {/* <Show/> */}
  
   
 

@@ -40,7 +40,7 @@ const Navbar = () => {
             </MenuList>
         </Menu>
         </Box>
-  <Box display={"flex"} gap="50px" fontSize={"2xl"}>
+  <Box display={"flex"} gap="50px" fontSize={"xl"}>
   <Text> <Link to="/coach">Coach</Link></Text>
     <Text><Link to="/elite"> Elite</Link></Text>
     
@@ -51,8 +51,8 @@ const Navbar = () => {
 
   <Spacer/>
   <ButtonGroup gap="20px">
-  <Button colorScheme='teal'><Link to ="/login">Log In</Link></Button>
-    <Button bgColor='white' color={" #2D8CFF"} _hover={{bgColor:" blue" ,color:"white"}}><Link to="/register"> Sign Up</Link></Button>
+
+    <Button width={"170px"} marginRight={"25px"}   bgColor='white' color={" #2D8CFF"} _hover={{bgColor:" blue" ,color:"white"}}><Link to="/register"> Sign Up</Link></Button>
     
   </ButtonGroup>
 </Flex>

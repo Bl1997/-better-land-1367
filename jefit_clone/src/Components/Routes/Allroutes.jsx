@@ -6,6 +6,7 @@ import Exercies from '../Pages/Exercies'
 import Home from "../Pages/Home"
 import Register from '../Pages/Register'
 import Login from '../Pages/Login'
+import Show from '../Pages/Show'
 const Allroutes = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Allroutes = () => {
     <Route path='/exercies' element={<Exercies/>}></Route>
     <Route path='/register' element={<Register/>}/>
     <Route path='/login' element={<Login/>} />
+    <Route path='/showpage' element={<Show/>}/>
     
 </Routes>
   

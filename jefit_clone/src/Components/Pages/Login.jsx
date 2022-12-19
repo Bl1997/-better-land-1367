@@ -1,14 +1,14 @@
 
-  import { useContext } from 'react';
+ 
   import { useState } from 'react';
   import {Text,Box, Flex, Spacer} from "@chakra-ui/react"
-  import { Link } from 'react-router-dom';
+  import { Link, useNavigate } from 'react-router-dom';
   
    
     
     export default function Login() {
      
-  
+  const navigate=useNavigate()
    
       const [email,setEmail]=useState("")
       const [password,setPassword]=useState("")
@@ -23,21 +23,35 @@
     setPassword(e.target.value)
   }
   
-     const handleSubmit=(e)=>{
-     e.preventDefault()
+
+let registerLS=JSON.parse(localStorage.getItem("register-page"))||[];
+
+
+
+   
+    
+
+const handleSubmit=(e)=>{
+e.preventDefault()
+
+
+
+let obj={
+ email:{email},
+ pass:{password},
+ conpass:{password},
+
+}
+registerLS.push(obj);
+console.log(obj)
+localStorage.setItem("register-page",JSON.stringify(registerLS))
+
+navigate("/")
+
+
+
   
-    fetch("http://localhost:3000/users",{
-      method:"POST",
-      headers:{"Content-Type" : "application/json"},
-      body :JSON.stringify({email,password})
-    }).then((res)=>res.json())
-       .then((res)=>{
-        if(res.token){
-          localStorage.setItem("token",JSON.stringify(res.token))
-        }
-       })
-    }
-  
+}
       return (
       <>
       <Box marginTop={"35px"} marginLeft={"400px"} justifyContent={"space-around"} textAlign={"center"}  shadow="2xl" width={"30%"} height="400px" borderRadius={"15"}>
